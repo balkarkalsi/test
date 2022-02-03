@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globe</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../html/css/bootstrap.min.css   "> -->
+    <link rel="stylesheet" href="../html/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../html/css/style.css">
+    <link rel="stylesheet" href="../html/css/responsive.css">
+    <script src="https://kit.fontawesome.com/8a576804ca.js" crossorigin="anonymous"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- hero image & header area -->
+    <main id="main">
+        <div class="hero-img">
+            <div class="md-lg-device">
+                <div class="header-primary">
+                    <div class="container">
+                        <ul class="left">
+                            <li><a href="#"><span><i class="far fa-sign-in-alt"></i></span> login</a></li>
+                            <li>
+                                <a href=""> <span><i class="far fa-plus-square"></i></span> register</a>
+                            </li>
+                        </ul>
+                        <ul class="right">
+                            <li><span><i class="far fa-share-alt"></i></span> <span><i class="fas fa-caret-down"></i></span></li>
+                            <li>EN <span><i class="fas fa-caret-down"></i></span></li>
+                            <li><button><span><i class="fas fa-plus"></i></span> add listing</button></li>
+                        </ul>
+                        <h2 class="logo">Gl <span><i class="fas fa-globe-americas primary-color"></i></span> bo</h2>
+                    </div>
+                </div>
+                <div class="header-secondary">
+                    <div class="container">
+                        <div class="col-lg-12 no-padding">
+                            <div class="row">
+                                <div class="header-secondary_items">
+                                    <div><span class="d-block"><button class="menu-bars"><span class="d-flex"><i class="fas fa-bars f-20"></i></span></button>
+                                        </span>
+                                    </div>
+                                    <div class="header-secondary_items_input-fields"><input type="text" placeholder="Keywords"> <input type="text"> <input type="text"></div>
+                                    <div><span class="d-block"><button><span><i class="fas fa-search"></i></span></button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 padding-left-0">
+                                </div>
+                                <div class="col-lg-10"> </div>
+                                <div class="col-lg-1 padding-right-0">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div id="web-search">
+                                    <div class="web-search_block">
+                                        <div class="container">
+                                            <div class="col-lg-12 no-padding ">
+                                                <div class="row mt-3">
+                                                    <h6>Distance: <output id="distanceSliderOutputId" class="position-absolute right-0px">50</output></h6>
+                                                  <!--   <p class="distance"><input type="range" id="distanceSliderInputId" value="50" min="1" max="100" oninput="distanceSliderOutputId.value = distanceSliderInputId.value"></p> -->
+													
+													
+													
+													 <p class="distance">
+													 <input type="range" value="24" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
+																<output style="position:absolute;color:white;right:0;top:0">24</output>
+													 </p>
+													
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <h6>Days Published: <!-- <output id="datePublishedOutputId" class="position-absolute right-0px"> 20</output> --> <span class="position-absolute right-25px"><i class="fas fa-chevron-left"></i></span></h6>
+                                                   <!--  <p class="distance"><input type="range" id="datePublishedInputId" min="1" max="100" value="50" oninput="datePublishedOutputId.value = datePublishedInputId.value"></p> -->
+													
+													
+														 <p class="distance">
+													 <input type="range" value="24" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
+																<output style="position:absolute;color:white;right:0;top:15px">24</output>
+													 </p>
+													
+													
+													
+                                                </div>
+                                                <div class="row mt-3 web-search_block-location">
+                                                    <h6 class="text-left">Location:</h6>
+                                                    <p class="first-child"><input type="text" placeholder="Select Country"></p>
+                                                    <p><input type="text" placeholder="Region"></p>
+                                                    <p><input type="text" placeholder="Address"></p>
+                                                    <p class="last-child"><input type="text" placeholder="Select Category"></p>
+                                                </div>
+                                                <div class="row mt-3 justify-content-end">
+                                                    <p><button class="btn btn-primary searchBtn"><i class="fas fa-search"></i></button> </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sm-device">
+                <span class="d-block sm-device_slider"><button><span class="d-flex"><i class="fas fa-bars f-20"></i></span></button>
+                </span>
+                <h2 class="logo align-middle">Gl <span><i class="fas fa-globe-americas primary-color"></i></span> bo</h2>
+                <span class="sm-device_search-btn"><button><span class="d-flex"><i class="fas fa-search f-20"></i></span> </button>
+                </span>
+            </div>
+        </div>
+    </main>
+    <!-- overlay / side panel -->
+    <div class="overlay"></div>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn">×</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <div id="search" class="search-panel">
+        <div><input type="text" placeholder="Keywords"></div>
+        <div class="mt-3">
+            <h6>Distance: <output id="distanceSliderOutputId" class="position-relative float-right" style="right:0px">50</output></h6>
+            <p><input type="range" id="distanceSliderInputId" value="50" min="1" max="100" oninput="distanceSliderOutputId.value = distanceSliderInputId.value"></p>
+        </div>
+        <div class="mt-3">
+            <h6 class="position-relative">Days Published: <output id="datePublishedOutputId" class="position-relative float-right"> 20</output> <span class="position-absolute right-25px"><i class="fas fa-chevron-left"></i></span></h6>
+            <p><input type="range" id="datePublishedInputId" min="1" max="100" value="50" oninput="datePublishedOutputId.value = datePublishedInputId.value"></p>
+        </div>
+        <div class="mt-3">
+            <h6 class="text-left">Location:</h6>
+            <p><input type="text" placeholder="Select Country"></p>
+            <p><input type="text" placeholder="Region"></p>
+            <p><input type="text" placeholder="Address"></p>
+            <p><input type="text" placeholder="Select Category"></p>
+        </div>
+        <div class="mt-3">
+            <p><button class="btn btn-primary">Search</button> <button class="ml-2" id="cancelSearch">Cancel</button> </p>
+        </div>
+    </div>
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../html/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sm-device_slider button').on('click', function() {
+                $(".sidebar").addClass('openSideBar');
+                $('.overlay').addClass('active');
+            });
+            $('.closebtn').click(function() {
+                $(".sidebar").removeClass('openSideBar');
+                $('.overlay').removeClass('active');
+            });
+            $('.sm-device_search-btn button').on('click', function() {
+                $('.search-panel').addClass('active').attr('style', 'z-index:10');
+            });
+            $('#cancelSearch').click(function() {
+                $('.search-panel').removeClass('active').attr('style', 'z-index:-1');
+            })
+            $('.header-secondary_items button.menu-bars').click(function() {
+                $('#web-search .web-search_block').addClass('active');
+            });
+
+            $('button.menu-bars').click(function() {
+
+                $('#web-search').toggleClass('active');
+
+            });
+
+
+
+        }); // main closed
+    </script>
+
+
+
+
+
+
+    <script>
+        let i = document.querySelector('input'),
+            o = document.querySelector('output');
+
+        o.innerHTML = i.value;
+
+        // use 'change' instead to see the difference in response
+        i.addEventListener('input', function() {
+            o.innerHTML = i.value;
+        }, false);
+    </script>
+</body>
+
+</html>
